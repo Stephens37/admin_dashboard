@@ -66,3 +66,21 @@
     margin-bottom: 100px;
 }
 
+#notifications {
+    height: 20px;
+    width: 20px;
+}
+
+#small_profile_pic {
+    height: 20px;
+    width: 20px;
+}
+
+#morgan {
+    font-size: 20px;
+}
+
+#large_profile_pic {
+    height: 40px;
+    width: 40px;
+}
