@@ -17,10 +17,6 @@
     grid-row: 1 / span 5;
 }
 
-.header {
-    grid-column: 2 / span 4;
-    grid-row: 1 / span 2;
-}
 
 .main_content {
     grid-column: 2 / span 4;
@@ -66,21 +62,70 @@
     margin-bottom: 100px;
 }
 
+.top_header {
+    display: grid;
+    grid-template-columns: 50px 1220px 50px 100px 300px;
+    width: 1720px;
+    height: 75px;
+}
+
+.bottom_header {
+    display: grid;
+    grid-template-columns: 100px 1020px 200px 200px 200px;
+    width: 1720px;
+    height: 75px;
+}
+
+#magnify {
+    grid-column: 1 / span 1;
+}
+
+#search_bar {
+    grid-column: 2 / span 1;
+}
+
 #notifications {
     height: 20px;
     width: 20px;
+    grid-column: 3 / span 1;
 }
 
 #small_profile_pic {
     height: 20px;
     width: 20px;
+    grid-column: 4 / span 1;
 }
 
 #morgan {
     font-size: 20px;
+    width: fit-content;
+    grid-column: 5 / span 1;
 }
 
 #large_profile_pic {
     height: 40px;
     width: 40px;
+    grid-column: 1 / span 1;
+}
+
+#hi {
+    width: fit-content;
+    grid-column: 2 / span 1;
+}
+
+#at_morgan {
+    width: fit-content;
+    grid-column: 2 / span 1;
+}
+
+#new {
+    grid-column: 3 / span 1;
+}
+
+#upload {
+    grid-column: 4 / span 1;
+}
+
+#share {
+    grid-column: 5 / span 1;
 }
