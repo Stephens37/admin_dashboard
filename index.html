@@ -6,35 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css" /> 
     <title>Admin Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <div class="container">
         <div class="sidebar">
             <div class="side_items">
-                <img class="side_icon" src="view-dashboard.svg" id="dashboard_img"></img>
+                <img class="side_icon" src="view-dashboard.svg" id="dashboard_img"/>
                 <div class="side_text" id="dashboard_text">Dashboard</div>
-                <img class="side_icon" src="home.svg"></img>
+                <img class="side_icon" src="home.svg"/>
                 <div class="side_text">Home</div>
-                <img class="side_icon" src="card-account-details.svg"></img>
+                <img class="side_icon" src="card-account-details.svg"/>
                 <div class="side_text">Profile</div>
-                <img class="side_icon" src="message.svg"></img>
+                <img class="side_icon" src="message.svg"/>
                 <div class="side_text">Messages</div>
-                <img class="side_icon" src="clock-time-one-outline.svg"></img>
+                <img class="side_icon" src="clock-time-one-outline.svg"/>
                 <div class="side_text">History</div>
-                <img class="side_icon" src="note-multiple-outline.svg"></img>
+                <img class="side_icon" src="note-multiple-outline.svg"/>
                 <div class="side_text">Tasks</div>
-                <img class="side_icon" src="account-group.svg"></img>
-                <div class="side_text">Communities</div>
+                <img class="side_icon" src="account-group.svg" id="communities_img"/>
+                <div class="side_text" id="communities_text">Communities</div>
 
-                <img class="side_icon" src="cog.svg"></img>
+                <img class="side_icon" src="cog.svg"/>
                 <div class="side_text">Settings</div>
-                <img class="side_icon" src="help-box.svg"></img>
+                <img class="side_icon" src="help-box.svg"/>
                 <div class="side_text">Support</div>
-                <img class="side_icon" src="shield-check-outline.svg"></img>
+                <img class="side_icon" src="shield-check-outline.svg"/>
                 <div class="side_text">Privacy</div>
             </div>
         </div>
-        <div class="header"></div>
+        <div class="header">
+            <input type="text" id="searchbar">
+            <img src="bell-ring-outline.svg"/>
+        </div>
         <div class="main_content"></div>
     </div>
     

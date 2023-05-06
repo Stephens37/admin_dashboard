@@ -5,7 +5,7 @@
 
 .container {
     display: grid;
-    grid-template-columns: 300px 1fr 1fr 1fr;
+    grid-template-columns: 200px 1fr 1fr 1fr;
     grid-template-rows: 50px 100px 1fr 1fr 1fr;
     height: 100vh;
 }
@@ -29,29 +29,40 @@
 
 .side_items {
     display: grid;
-    grid-column: 1 / span 2;
+    grid-template-columns: 60px 140px;
     grid-row: 1 / 9;
-    column-gap: 10px;
 }
 
 .side_icon {
     height: 20px;
     width: 20px;
     grid-column: 1 / span 1;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(198deg) brightness(104%) contrast(102%);
 }
 
 .side_text {
     width: fit-content;
     grid-column: 2 / span 1;
+    color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 #dashboard_text {
     font-size: 20px;
+    margin-top: 23px;
 }
 
 #dashboard_img {
     height: 30px;
     width: 30px;
+    margin-bottom: 100px;
+    margin-top: 20px;
+    color: white;
 }
 
+#communities_img {
+    margin-bottom: 100px;
+}
 
