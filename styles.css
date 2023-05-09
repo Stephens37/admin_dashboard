@@ -5,22 +5,26 @@
 
 .container {
     display: grid;
-    grid-template-columns: 200px 1fr 1fr 1fr;
-    grid-template-rows: 50px 100px 1fr 1fr 1fr;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 60px 100px 1fr;
     height: 100vh;
 }
 
 .sidebar {
     grid-column: 1 / span 1;
-    
-    background-color: blue;
-    grid-row: 1 / span 5;
+    background-color: rgb(0, 148, 240);
+    grid-row: 1 / span 3;
+}
+
+.header {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
 }
 
 
 .main_content {
-    grid-column: 2 / span 4;
-    grid-row: 3 / span 3;
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
 }
 
 .side_items {
@@ -64,35 +68,49 @@
 
 .top_header {
     display: grid;
-    grid-template-columns: 50px 1220px 50px 100px 300px;
+    grid-template-columns: 50px 1220px 75px 75px 300px;
     width: 1720px;
-    height: 75px;
+    height: 60px;
+    align-items: center;
 }
 
 .bottom_header {
     display: grid;
     grid-template-columns: 100px 1020px 200px 200px 200px;
     width: 1720px;
-    height: 75px;
+    height: 100px;
+    align-items: center;
+    box-shadow: 0px 5px 2px lightgray;
+
 }
 
 #magnify {
     grid-column: 1 / span 1;
+    height: 20px;
+    width: 20px;
+    margin: 0px 10px 0px 40px;
 }
 
 #search_bar {
     grid-column: 2 / span 1;
+    height: 30px;
+    margin-left: 40px;
+    width: 700px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+    background-color: rgb(221, 221, 221);
+    border-width: 0px;
 }
 
 #notifications {
-    height: 20px;
-    width: 20px;
+    height: 40px;
+    width: 40px;
     grid-column: 3 / span 1;
 }
 
 #small_profile_pic {
-    height: 20px;
-    width: 20px;
+    height: 40px;
+    width: 40px;
     grid-column: 4 / span 1;
 }
 
@@ -100,22 +118,41 @@
     font-size: 20px;
     width: fit-content;
     grid-column: 5 / span 1;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 17.5px;
 }
 
 #large_profile_pic {
-    height: 40px;
-    width: 40px;
+    height: 60px;
+    width: 60px;
     grid-column: 1 / span 1;
+    margin-left: 30px;
 }
 
 #hi {
     width: fit-content;
+    height: fit-content;
     grid-column: 2 / span 1;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 20px;
 }
 
 #at_morgan {
     width: fit-content;
     grid-column: 2 / span 1;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 20px;
+    font-size: 30px
+}
+
+.header_buttons {
+    width: 120px;
+    height: 40px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color:  rgb(0, 148, 240);
+    border-radius: 10px;
+    border-width: 0px;
 }
 
 #new {
@@ -128,4 +165,12 @@
 
 #share {
     grid-column: 5 / span 1;
+}
+
+
+.projects {
+    display: grid;
+    width: 1200px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 1fr 1fr 1fr 100px;
 }
