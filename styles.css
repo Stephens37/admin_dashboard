@@ -217,6 +217,7 @@
     grid-row: 2 / span 1;
     font-family: 'Roboto', sans-serif;
     margin-left: 20px;
+    color: rgba(87, 87, 87, 0.712);
 }
 
 .star {
@@ -245,15 +246,18 @@
 
 .main_right{
     display: grid;
-    grid-template-rows: 100px 421px 300px;
+    grid-template-rows: 100px 300px 300px;
+    margin-right: 20px;
 }
 
 .announcements {
     grid-row: 2 / span 1;
     grid-column: 1 / span 1;
     display: grid;
-    width: 520px;
-    margin-top: 100px;
+    justify-content: start;
+    background-color: white;
+    text-align: start;
+    border-radius: 10px;
 }
 
 #announcement_header {
@@ -264,22 +268,36 @@
     font-weight: bolder;
     margin-top: 60px;
     height: 40px;
-    grid-template-rows: 1fr 1fr 1fr;
+    margin-bottom: 0px;
 }
 
 #maintenance {
-    grid-row: 2 / span 1;
-    grid-template-rows: 1fr 1fr;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgb(221, 221, 221);
 }
 
 #share_announce {
-    grid-row: 3 / span 1;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgb(221, 221, 221);
 }
 
 #privacy {
-    grid-row: 4 / span 1;
+    padding-bottom: 20px;
 }
 
+.announce_content {
+    margin: 20px 20px 0px 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.announce_title {
+    font-weight: bolder;
+}
+
+.announce_text {
+    font-size: 16px;
+    color: rgba(87, 87, 87, 0.712);
+}
 
 
 
