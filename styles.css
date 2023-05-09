@@ -25,6 +25,7 @@
 .main_content {
     grid-column: 2 / span 1;
     grid-row: 3 / span 1;
+    background-color: rgb(221, 221, 221);
 }
 
 .side_items {
@@ -173,4 +174,69 @@
     width: 1200px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100px 1fr 1fr 1fr 100px;
+}
+
+#project_header {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 60px;
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: 1fr 50px 50px 50px;
+    grid-template-rows: 40px 1fr 50px;
+    margin: 0px 20px 20px 20px;
+    background-color: white;
+    border-radius: 10px;
+    border-left: 10px solid orange;
+    padding: 20px 0px;
+}
+
+.box_title {
+    width: fit-content;
+    height: fit-content;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.lorem {
+    width: fit-content;
+    height: fit-content;
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 1;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 20px;
+}
+
+.star {
+    width: 20px;
+    height: 20px;
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+    margin-top: 25px;
+}
+
+.eye {
+    width: 20px;
+    height: 20px;
+    grid-column: 3 / span 1;
+    grid-row: 3 / span 1;
+    margin-top: 25px;
+}
+
+.fork {
+    width: 20px;
+    height: 20px;
+    grid-column: 4 / span 1;
+    grid-row: 3 / span 1;
+    margin-top: 25px;
 }
